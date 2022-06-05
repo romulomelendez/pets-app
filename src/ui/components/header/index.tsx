@@ -3,7 +3,7 @@ import { HeaderContainer, Logo } from './styles'
 export const Header = () => (
 
     <HeaderContainer>
-        <Logo src="/imaes/logo.png" alt="pets logo" />
+        <Logo src="/images/logo.jpg" alt="pets logo" />
     </HeaderContainer>
 
 )
