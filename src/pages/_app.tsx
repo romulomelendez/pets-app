@@ -1,12 +1,10 @@
 import type { AppProps } from 'next/app'
 
 import { ThemeProvider } from '@mui/material'
+import { Header } from '../ui/components/Header'
+import theme from '../ui/themes/theme'
 
 import '../ui/styles/globals.css'
-
-import { Header } from '../ui/components/header'
-
-import theme from '../ui/themes/theme'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
@@ -18,6 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     </ThemeProvider>
   
   )
+
 }
 
 export default MyApp
