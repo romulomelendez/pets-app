@@ -12,7 +12,22 @@ const Home: NextPage = () => {
         title="TESTE"
         subtitle={ <span>Com um pequeno valor mensal, você<br />pode <strong>adotar um pet virtualmente</strong></span> }
       />
-      <List />
+      <List
+        pets={[
+          {
+            id: 1,
+            name: 'Maillow',
+            history: 'dewiofnwejof',
+            photo_url: 'https://skycms.s3.amazonaws.com/images/5495100/cachorro-card-1.png'
+          },
+          {
+            id: 2,
+            name: 'Renato',
+            history: 'dewiofnwejof',
+            photo_url: 'https://skycms.s3.amazonaws.com/images/5495100/cachorro-card-2.png'
+          }
+        ]}
+      />
     </>
 
   )
