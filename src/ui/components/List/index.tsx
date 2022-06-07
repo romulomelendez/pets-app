@@ -3,10 +3,12 @@ import { Button } from '@mui/material'
 import { Scroll, Item, Photo, Informations, Name, Description } from './styles'
 
 import { Pet } from '../../../data/@types/Pet'
+import { TextService } from '../../../data/services/TextService'
 
 interface ListProps { pets: Pet[]; }
 
 export const List = ({ pets }: ListProps) => {
+    const textMaxLength = 200
 
     return (
 
@@ -18,7 +20,7 @@ export const List = ({ pets }: ListProps) => {
                     <Informations>
 
                         <Name>{ pet.name }</Name>
-                        <Description>{ pet.history }</Description>
+                        <Description>{ TextService.limitText(pet.history, textMaxLength) }</Description>
                         <Button fullWidth variant={'contained'}>Adopt { pet.name }</Button>
 
                     </Informations>
